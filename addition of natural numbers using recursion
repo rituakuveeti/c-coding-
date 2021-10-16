@@ -1,0 +1,17 @@
+// sum of natural numbers using recursion
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    printf("sum of all natural numbers upto n is %d",addnatural(n));
+    
+    
+}
+int addnatural(int n){
+    if(n==1)
+    return 1;
+    else
+    return n+addnatural(n-1);
+}
