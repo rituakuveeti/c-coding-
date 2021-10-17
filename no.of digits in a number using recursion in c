@@ -1,0 +1,17 @@
+// no.of elements in a number using recursion
+#include <stdio.h>
+int count=0;
+int main() {
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    printf("no.of digits in number is %d",digits(n));
+}
+int digits(int x){
+    
+    if(x==0)
+    return count;
+    else
+    count++;
+    return digits(x/10);
+}    
