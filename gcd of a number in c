@@ -1,0 +1,15 @@
+// gcd of a given number
+#include <stdio.h>
+
+int main() {
+    int x,y,gcd,i;
+   printf("enter x and y values:");
+   scanf("%d %d",&x,&y);
+    for(i=1;i<=x;i++){
+       if(x%i==0 && y%i==0){
+           gcd=i;
+       }
+        
+    }
+    printf("%d\n",gcd);
+}    
