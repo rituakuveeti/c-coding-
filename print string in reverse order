@@ -1,0 +1,14 @@
+// print string in reverse order
+#include <stdio.h>
+
+int main() {
+   char str1[100];
+   int len=0,i;
+   printf("enter a string:");
+   gets(str1);
+   len=strlen(str1);
+   printf("reverse of a string is:");
+   for(i=len-1;i>=0;i--){
+       printf("%c",str1[i]);
+   }
+}
