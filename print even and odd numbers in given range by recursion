@@ -1,0 +1,19 @@
+// print even and odd number in given range
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the range from 1 to n:");
+    scanf("%d",&n);
+    printf("even numbers in given range is:");
+    evenorodd(2,n);
+    printf("odd numbers in given range is :");
+    evenorodd(1,n);
+}
+int evenorodd(int x,int y){
+    if(x>y)
+    return ;
+    else
+    printf("%d\n",x);
+    return evenorodd(x+2,y);
+}
