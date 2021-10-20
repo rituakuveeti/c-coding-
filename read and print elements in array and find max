@@ -1,0 +1,22 @@
+// read and write elements in array and find the max element in that
+#include <stdio.h>
+
+int main() {
+    int arr1[50];
+    int i,n,hostno=-99999;
+    printf("enter the size of array:");
+    scanf("%d",&n);
+    printf("enter the %d elements in array:",n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr1[i]);
+    }
+    //serching for max element in an array
+    for(i=0;i<n;i++){
+        if(hostno<arr1[i]){
+            hostno=arr1[i];
+        }
+        
+    }
+    printf("the biggest element in an array is %d",hostno);
+    
+}
