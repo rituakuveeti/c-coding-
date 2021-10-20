@@ -1,0 +1,24 @@
+// print max element in an array using recursion
+#include <stdio.h>
+
+int main() {
+    int arr1[5]={100,500,200,300,50};
+    int i=0;
+    
+    printf("the max element in arr1 is %d",maxelement(arr1,i));
+    
+}
+int maxelement(int arr1[],int i){
+    static int hostno=-99999;
+    
+    if(i<5){
+        if(hostno<arr1[i]){
+            hostno=arr1[i];
+            
+        }
+        i++;
+        maxelement(arr1,i);
+    }
+    return hostno;
+    
+}
