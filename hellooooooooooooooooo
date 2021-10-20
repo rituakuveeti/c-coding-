@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#define MAX 100
+
+int main() {
+    int arr1[MAX];
+    int i,n;
+    printf("enter size of array:");
+    scanf("%d",&n);
+    printf("enter %d elements in array:",n);
+    for(i=0;i<=n-1;i++){
+        scanf("%d",&arr1[i]);
+    }
+    printf('the elements in array are:');
+    arrayelements(arr1,0,n);
+}
+void arrayelements(int arr1[],int str,int l){
+    if(str>=l)
+    return;
+    else
+    printf("%d  ",arr1[str]);
+    arrayelements(arr1,str+1,l);
+}
